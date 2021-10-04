@@ -1,0 +1,479 @@
+#header img {
+  display: block;;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 200px;
+}
+
+#header p {
+  padding: 0px 40px 5px;
+  margin: 0;
+  text-align: right;
+  font-family: Helvetica Narrow, sans-serif;
+  font-size: 16px;
+}
+
+#header { 
+  background: black; 
+} 
+
+#navigation { 
+  float: left; 
+  width: 100%; 
+  height: 40px;
+  background: #FFA500; 
+} 
+
+#navigation ul { 
+  margin: 0; 
+  padding: 0; 
+} 
+
+#navigation ul li { 
+  list-style-type: none; 
+  display: inline; 
+} 
+
+#navigation li a { 
+  display: block; 
+  float: left; 
+  padding: 5px 50px; 
+  color: black; 
+  text-decoration: none; 
+  border-right: 1px solid; 
+  font-size: 26px;
+  font-family: Georgia;
+} 
+
+#navigation li a:hover { 
+  background: #FF4500; 
+}
+
+#navigation li a.active {
+  background: #FF4500;
+    color: black;
+}
+
+#icon {
+  width: 20px;
+  height: 20px;
+}
+
+#content-container { 
+  float: left; 
+  width: 100%;  
+} 
+
+#main { 
+  clear: left; 
+  float: left; 
+  width: 100%; 
+  padding: 20px 0;  
+  display: inline;
+} 
+
+#main h2 { 
+  margin: 0;
+  font-family: Georgia; 
+  font-size: 30px;
+}
+
+#sidebar {
+  width: 25%;
+  margin: 0 0 25px 0;
+  display: inline;
+  padding: 0;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  position: absolute;
+  width: 15%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFA500;
+  height: auto;
+  overflow: auto;
+  color: black;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+#sidebar #user {
+  padding: 20px 16px;
+  text-align: center;
+  background: #FFD700;
+  border-bottom: 1px solid;
+}
+
+#sidebar li a {
+  display: block;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Georgia;
+  border-bottom: 1px solid;
+}
+
+#sidebar li a.active {
+  background-color: #FF4500;
+}
+
+#sidebar li a:hover{
+  background-color: #FF4500;
+}
+
+#sidebar hr {
+  margin: 0;
+}
+
+#block-content {
+  margin-left:15%; 
+  padding:1px 16px; 
+  text-align: center;
+}
+
+#block-content h3 {
+  font-family: Georgia;
+}
+
+#side { 
+  float: right; 
+  width: 40%; 
+  padding: 20px 0; 
+  margin: 0 3% 0 0; 
+  display: inline; 
+} 
+
+#side h3 { 
+  margin: 0; 
+} 
+
+#footer { 
+  clear: left; 
+  background-color: #1C2833; 
+  font-family: Helvetica Narrow, sans-serif;
+  text-align: right; 
+  padding: 20px; 
+  height: 1%;
+  color: white;
+} 
+
+#border {
+  border-style: solid;
+  height: 200px;
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+#border p {
+  font-family: Georgia;
+  font-size: 16px;
+  text-align: justify;
+  color: white;
+}
+
+#border h2 {
+  font-family: Georgia;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+#border2 {
+  border-style: solid;
+  height: auto;
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#border2 p {
+  font-family: Helvetica Narrow, sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  color: black;
+}
+
+#border2 h2 {
+  font-family: Georgia;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+#show {
+  position: relative;
+  display: inline;
+}
+
+#hide {
+  position: relative;
+  display: none;
+}
+
+#show #showtext, #hide #hidetext {
+  visibility: hidden;
+  width: 100px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  font-family: Georgia;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+#show:hover #showtext, #hide:hover #hidetext{
+  visibility: visible;
+}
+
+input[type=text], input[type=password], input[type=number], select, textarea {
+  font-family: Helvetica Narrow, sans-serif;
+  font-size: 16px;
+  width: 70%;
+  padding: 5px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, select:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+} 
+
+input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 15px;
+  font-family: Helvetica Narrow, sans-serif;
+  font-size: 16px;
+  padding: 10px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+input[type=reset] {
+  background-color: #2471A3;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  opacity:1;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  font-family: Helvetica Narrow, sans-serif;
+  font-size: 16px;
+}
+
+table tr, th, td {
+  border: 1px solid black;
+}
+
+table th, td {
+  padding: 5px;
+}
+
+table th {
+  background-color: #DCDCDC;
+}
+
+table td {
+  background-color: #FFFFFF;
+} 
+
+#add, #view {
+  border: solid;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px;
+  color: white;
+}
+
+#add {
+  background-color: #4CAF50;
+  margin: 4px 15%;
+}
+
+#view {
+  background-color: #2196F3;
+}
+
+table td input[name="view"], input[name="edit"], input[name="delete"] {
+  background-color: #2196F3;
+  color: white;
+  border-radius: 0;
+  padding: 5px 5px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 55px;
+}
+
+table td input[name="edit"] {
+  background-color: #ff9800;
+}
+
+table td input[name="delete"] {
+  background-color: #FF0000;
+}
+
+input[name="add"] {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 0;
+  font-family: Helvetica Narrow, sans-serif;
+  padding: 10px 10px;
+  margin: 0px 15%;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+/* New Zakat Application */
+#zakatPndptn, #zakatFitrah {
+  display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+#close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#wrapper { 
+  margin: 0 auto; 
+  width: 100%; 
+  background: #fff; 
+} 
